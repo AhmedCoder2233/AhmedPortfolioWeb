@@ -44,7 +44,6 @@ const About = () => {
     "UI/UX Designer",
     "Content Creator",
     "Project Manager",
-    "SEO Specialist",
   ];
 
   const handleMouseMove = (e: React.MouseEvent, id: number) => {
@@ -106,22 +105,23 @@ const About = () => {
             </motion.div>
           ))}
         </div>
+        <div className="mt-16 w-full overflow-hidden">
+  <motion.div
+    className="flex w-max space-x-6"
+    animate={{ x: ["0%", "-100%"] }} // Continuous scrolling effect
+    transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
+  >
+    {[...skills, ...skills].map((skill, index) => (
+      <div
+        key={index}
+        className="text-lg md:text-xl font-semibold text-white px-6 py-3 bg-gray-800 rounded-md whitespace-nowrap"
+      >
+        {skill}
+      </div>
+    ))}
+  </motion.div>
+</div>
 
-        {/* Skills Slider */}
-        <div className="mt-16">
-          <motion.div
-            className="flex space-x-6 overflow-x-hidden whitespace-nowrap scroll-smooth animate-marquee"
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: false }}
-            transition={{ duration: 3, repeat: Infinity, repeatType: "loop" }}
-          >
-            {skills.map((skill, index) => (
-              <div key={index} className="text-xl font-semibold text-white">
-                {skill}
-              </div>
-            ))}
-          </motion.div>
-        </div>
 
         {/* Additional Sections */}
         <div className="mt-16">
