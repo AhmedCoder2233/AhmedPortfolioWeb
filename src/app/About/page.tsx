@@ -93,8 +93,8 @@ const About = () => {
               viewport={{ once: false }}
               transition={{ delay: index * 0.3, duration: 1 }}
             >
-              <h2 className="text-2xl font-bold text-black mb-4">{item.title}</h2>
-              <p className="text-gray-700 mb-4">{item.description}</p>
+              <h2 className="text-2xl font-bold text-red-600 mb-4">{item.title}</h2>
+              <p className="text-white mb-4">{item.description}</p>
               <Image
                 src={item.image}
                 alt={item.title}

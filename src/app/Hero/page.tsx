@@ -119,11 +119,10 @@ export default function Hero() {
           (feature, index) => (
             <motion.div
               key={index}
-              className="p-6 bg-gray-800 rounded-lg shadow-lg text-center hover:bg-red-500 transition-all duration-300"
-              whileHover={{ scale: 1.1 }}
+              className="p-6 bg-gray-800 rounded-lg shadow-lg text-center hover:bg-red-500 transition-all duration-100"
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: index * 0.3, duration: 0.8 }}
+              transition={{ delay: index * 0.3, duration: 0.5 }}
             >
               {feature}
             </motion.div>
