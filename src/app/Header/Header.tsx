@@ -27,14 +27,14 @@ export default function Header() {
       <div className="z-50">
         <BiMenu
           onClick={handleClick}
-          className="block justify-self-end md:hidden text-white pt-3 text-5xl mr-5 cursor-pointer z-50"
+          className="block ml-[80vw] md:hidden text-white pt-3 text-5xl mr-5 cursor-pointer z-50"
         />
       </div>
 
       {/* Mobile Menu */}
       {menu && (
         <div className="w-full h-64 bg-black absolute top-16 left-0 z-50">
-          <ul className="text-white block justify-end p-8 space-y-4 text-2xl font-semibold">
+          <ul className="text-white block p-8 space-y-4 text-2xl font-semibold">
             <Link href={"/"}><li>Home</li></Link>
             <Link href={"#About"}><li>About</li></Link>
             <Link href={"#Skills"}><li>Skills</li></Link>

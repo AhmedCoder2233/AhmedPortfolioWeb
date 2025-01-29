@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
@@ -47,7 +47,6 @@ const About = () => {
     "SEO Specialist",
   ];
 
-  // Update position of the draggable elements
   const handleMouseMove = (e: React.MouseEvent, id: number) => {
     setDraggableElements((prevState) =>
       prevState.map((el) =>
@@ -59,17 +58,19 @@ const About = () => {
   };
 
   return (
-    <div className="relative w-full min-h-screen bg-gradient-to-br from-gray-900 to-gray-700 text-white overflow-hidden"id="About">
-      {/* Animated Background Elements */}
+    <div className="relative w-full min-h-screen bg-gradient-to-br from-gray-900 to-gray-700 text-white overflow-hidden" id="About">
+      {/* Optimized Background Elements */}
       <motion.div
         className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-pink-400 to-blue-400 blur-3xl opacity-30"
-        animate={{ x: [0, 300, -300, 0], y: [0, 200, -200, 0] }}
-        transition={{ repeat: Infinity, duration: 15, ease: "easeInOut" }}
+        animate={{ x: [0, 200, -200, 0], y: [0, 150, -150, 0] }}
+        transition={{ repeat: Infinity, duration: 10, ease: "easeInOut" }}
+        style={{ willChange: 'transform' }} // Optimized animation
       />
       <motion.div
         className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-green-400 to-yellow-400 blur-3xl opacity-30"
-        animate={{ x: [200, -200, 200], y: [-150, 150, -150] }}
+        animate={{ x: [200, -200, 200], y: [-100, 100, -100] }}
         transition={{ repeat: Infinity, duration: 12, ease: "easeInOut" }}
+        style={{ willChange: 'transform' }} // Optimized animation
       />
 
       <div className="relative z-10 container mx-auto px-4 py-16">
@@ -138,7 +139,7 @@ const About = () => {
               className="bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:scale-105 transition-transform"
               whileHover={{ scale: 1.1 }}
             >
-<a href="#Contact">Contact Me</a>
+              <a href="#Contact">Contact Me</a>
             </motion.button>
           </div>
         </div>
@@ -166,7 +167,7 @@ const About = () => {
       </div>
 
       {/* Draggable Elements */}
-      {draggableElements.map((el) => (
+      {draggableElements.slice(0, 2).map((el) => ( // Limit draggable elements to 2
         <motion.div
           key={el.id}
           className="absolute w-16 h-16 bg-gradient-to-r from-rose-500 to-yellow-500 rounded-full shadow-lg cursor-pointer"
