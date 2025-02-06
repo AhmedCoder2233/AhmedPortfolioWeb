@@ -105,6 +105,7 @@ const About = () => {
             </motion.div>
           ))}
         </div>
+        
         <div className="mt-16 w-full overflow-hidden">
   <motion.div
     className="flex w-max space-x-6"
