@@ -14,7 +14,7 @@ export default function Projects() {
     },
     {
       title: "Project Two",
-      description: "This is my 2nd Ecommerce Web.",
+      description: "This is my 2nd Ecommerce Web (Work In Progress!).",
       link: "https://final-hackathon-3-zzop.vercel.app/",
       image: "/3-devices-black (1).png",
     },
