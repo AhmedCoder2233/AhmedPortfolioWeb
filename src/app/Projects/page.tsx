@@ -8,13 +8,13 @@ export default function Projects() {
   const projects = [
     {
       title: "Project One",
-      description: "This is my Ecommerce Web",
-      link: "https://ecommerce-web-vtb4.vercel.app/",
-      image: "/3-devices-black.png",
+      description: "This is my Restaurent Web",
+      link: "https://restaurent-web-u2bu.vercel.app/",
+      image: "/restaurent.png",
     },
     {
       title: "Project Two",
-      description: "This is my 2nd Ecommerce Web (Work In Progress!).",
+      description: "This is my 2nd Ecommerce Web.",
       link: "https://final-hackathon-3-zzop.vercel.app/",
       image: "/3-devices-black (1).png",
     },
@@ -45,7 +45,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="relative w-full min-h-screen bg-gradient-to-br from-gray-900 to-gray-700 text-white overflow-hidden flex flex-col items-center py-20" id="projects">
+    <div className="relative w-full bg-gradient-to-br from-gray-900 to-gray-700 text-white overflow-hidden flex flex-col items-center py-20" id="projects">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl sm:text-5xl font-bold mb-10">My Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

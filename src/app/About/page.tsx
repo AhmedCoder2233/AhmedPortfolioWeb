@@ -57,7 +57,7 @@ const About = () => {
   };
 
   return (
-    <div className="relative w-full min-h-screen bg-gradient-to-br from-gray-900 to-gray-700 text-white overflow-hidden" id="About">
+    <div className="relative w-full bg-gradient-to-br from-gray-900 to-gray-700 text-white overflow-hidden" id="About">
       {/* Optimized Background Elements */}
       <motion.div
         className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-pink-400 to-blue-400 blur-3xl opacity-30"

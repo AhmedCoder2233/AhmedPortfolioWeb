@@ -1,8 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiSanity } from "react-icons/si";
+import { DiPython } from "react-icons/di";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
+import { LiaPython } from "react-icons/lia";
+import { SiTypescript, SiNextdotjs, SiTailwindcss, SiSanity, SiPython } from "react-icons/si";
 
 const skills = [
   { name: "HTML", icon: <FaHtml5 className="text-orange-500 text-6xl" /> },
@@ -13,11 +15,12 @@ const skills = [
   { name: "React", icon: <FaReact className="text-cyan-500 text-6xl" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-400 text-6xl" /> },
   { name: "Sanity CMS", icon: <SiSanity className="text-red-500 text-6xl" /> },
+{ name: "Python", icon: <LiaPython className="text-yellow-500 text-6xl"/> },
 ];
 
 export default function Skills() {
   return (
-    <div className="relative w-full min-h-screen bg-gradient-to-br from-gray-900 to-gray-700 text-white overflow-hidden flex flex-col items-center py-20"id="Skills">
+    <div className="relative w-full bg-gradient-to-br from-gray-900 to-gray-700 text-white overflow-hidden flex flex-col items-center py-20"id="Skills">
       <motion.h2 
         className="text-4xl font-bold mb-10"
         initial={{ opacity: 0, y: -50 }}
