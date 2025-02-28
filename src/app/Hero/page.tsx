@@ -77,7 +77,7 @@ export default function Hero() {
 </Link>
               </button>
               <button className="px-6 py-2 bg-rose-500 hover:bg-rose-600 transition-all rounded-md shadow-md w-full sm:w-auto">
-              <a href="/resume.pdf" download className="text-white">Download CV</a>
+              <a href="/Skills" download className="text-white">My Skills</a>
               </button>
             </div>
 
